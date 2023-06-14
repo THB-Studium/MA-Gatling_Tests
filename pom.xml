@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.gatling.test</groupId>
+  <artifactId>load-performance-test</artifactId>
+  <version>3.9.1</version>
+
+  <properties>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <encoding>UTF-8</encoding>
+
+    <gatling.version>${project.version}</gatling.version>
+    <gatling-maven-plugin.version>4.2.1</gatling-maven-plugin.version>
+    <scala-maven-plugin.version>4.8.0</scala-maven-plugin.version>
+    <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>io.gatling.highcharts</groupId>
+      <artifactId>gatling-charts-highcharts</artifactId>
+      <version>${gatling.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.gatling</groupId>
+      <artifactId>gatling-app</artifactId>
+      <version>${gatling.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.gatling</groupId>
+      <artifactId>gatling-recorder</artifactId>
+      <version>${gatling.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.scalaj</groupId>
+      <artifactId>scalaj-http_2.13</artifactId>
+      <version>2.4.2</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <testSourceDirectory>src/test/scala</testSourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>${maven-jar-plugin.version}</version>
+      </plugin>
+      <plugin>
+        <groupId>net.alchim31.maven</groupId>
+        <artifactId>scala-maven-plugin</artifactId>
+        <version>${scala-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>testCompile</goal>
+            </goals>
+            <configuration>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>io.gatling</groupId>
+        <artifactId>gatling-maven-plugin</artifactId>
+        <version>${gatling-maven-plugin.version}</version>
+        <configuration>
+          <!--          <simulationClass>simulations.LoadSimulation1</simulationClass>-->
+          <runMultipleSimulations>true</runMultipleSimulations>
+          <includes>
+            <include>simulations.*</include>
+          </includes>
+          <!--          <excludes>-->
+          <!--            <exclude>my.package.IgnoredSimulation</exclude>-->
+          <!--          </excludes>-->
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>test</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

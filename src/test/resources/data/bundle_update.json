@@ -1,0 +1,265 @@
+{
+  "resourceType": "Bundle",
+  "id": "403",
+  "meta": {
+    "formatCommentsPre": [],
+    "formatCommentsPost": [],
+    "id": "1047d3cb-12de-4ee8-bee6-2ad33dfb7802",
+    "extension": [],
+    "disallowExtensions": false,
+    "versionId": 2,
+    "lastUpdated": "2023-04-17T08:41:01",
+    "source": {
+      "formatCommentsPre": [],
+      "formatCommentsPost": [],
+      "id": "8ccca4fc-d7e6-4a9e-ac33-0c1a610a4fe0",
+      "extension": [],
+      "disallowExtensions": false,
+      "myStringValue": null,
+      "empty": true
+    },
+    "profile": [],
+    "security": [],
+    "tag": [
+      {
+        "formatCommentsPre": [],
+        "formatCommentsPost": [],
+        "id": "88478f19-6b4d-43e8-af82-97a81321e040",
+        "extension": [],
+        "disallowExtensions": false,
+        "system": {
+          "formatCommentsPre": [],
+          "formatCommentsPost": [],
+          "id": "7ac90c38-4be8-48d7-baa8-4e0776f29023",
+          "extension": [],
+          "disallowExtensions": false,
+          "myStringValue": "http://hl7.org/fhir/composition-updated-status",
+          "empty": true
+        },
+        "version": null,
+        "code": {
+          "formatCommentsPre": [],
+          "formatCommentsPost": [],
+          "id": "a68169b1-796c-4484-99f3-7d70bbd07e8b",
+          "extension": [],
+          "disallowExtensions": false,
+          "myStringValue": "update 1",
+          "system": null,
+          "empty": true
+        },
+        "display": "updated object",
+        "userSelected": false,
+        "empty": true
+      }
+    ],
+    "empty": true
+  },
+  "type": "message",
+  "entry": [ {
+    "fullUrl": "urn:uuid:5307b448-f1cf-4669-aac0-149961e57677",
+    "resource": {
+      "resourceType": "MessageHeader",
+      "extension": [ {
+        "url": "BusAckRequested",
+        "valueBoolean": true
+      }, {
+        "url": "InfAckRequested",
+        "valueBoolean": true
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:e80a139b-55c4-4ae7-91c1-7860ebfbd9da",
+    "resource": {
+      "resourceType": "Bundle",
+      "identifier": {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "858b145f-c297-48b3-967e-0d7cb71624b2"
+      },
+      "type": "document",
+      "entry": [ {
+        "fullUrl": "urn:uuid:33846b7d-007b-4487-81b5-d8ff92bd21d1",
+        "resource": {
+          "resourceType": "Composition",
+          "id": "33846b7d-007b-4487-81b5-d8ff92bd21d1",
+          "type": {
+            "coding": [ {
+              "system": "http://snomed.info/sct",
+              "code": "373942005",
+              "display": "Discharge summary"
+            } ]
+          },
+          "subject": {
+            "reference": "urn:uuid:2a057592-0af4-4f16-ad20-21662118be80"
+          },
+          "title": "Test document description",
+          "section": [ {
+            "title": "GP Practice",
+            "code": {
+              "coding": [ {
+                "system": "http://snomed.info/sct",
+                "code": "886711000000101",
+                "display": "GP practice"
+              } ]
+            },
+            "entry": [ {
+              "reference": "urn:uuid:0716cbdb-f8dc-401e-9057-feef92308c66"
+            } ]
+          }, {
+            "title": "Allergies and adverse Reactions",
+            "code": {
+              "coding": [ {
+                "system": "http://snomed.info/sct",
+                "code": "886921000000105",
+                "display": "Allergies and adverse reactions"
+              } ]
+            }
+          }, {
+            "title": "Diagnoses",
+            "code": {
+              "coding": [ {
+                "system": "http://snomed.info/sct",
+                "code": "887161000000102",
+                "display": "Diagnoses"
+              } ]
+            }
+          }, {
+            "title": "Clinical summary",
+            "code": {
+              "coding": [ {
+                "system": "http://snomed.info/sct",
+                "code": "887181000000106",
+                "display": "Clinical summary"
+              } ]
+            },
+            "text": {
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test clinical summary</div>"
+            }
+          }, {
+            "title": "Person completing record",
+            "code": {
+              "coding": [ {
+                "system": "http://snomed.info/sct",
+                "code": "887231000000104",
+                "display": "Person completing record"
+              } ]
+            },
+            "entry": [ {
+              "reference": "urn:uuid:6701401c-169b-4056-a35b-c2510f0e3bf7"
+            } ]
+          }, {
+            "title": "Plan and requested actions",
+            "code": {
+              "coding": [ {
+                "system": "http://snomed.info/sct",
+                "code": "887201000000105",
+                "display": "Plan and requested actions"
+              } ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                    <table>\n                      <tbody>\n                        <tr>\n                          <th>Actions for healthcare professionals</th>\n                          <td>Test Actions for healthcare</td>\n                        </tr>\n                        <tr>\n                          <th>Actions for patient or their carer</th>\n                          <td>Test Actions for patient</td>\n                        </tr>\n                        <tr>\n                          <th>Agreed with patient or legitimate patient representative</th>\n                          <td>Test agreed with patient</td>\n                        </tr>\n                      </tbody>\n                    </table>\n                  </div>"
+            }
+          } ]
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:2a057592-0af4-4f16-ad20-21662118be80",
+    "resource": {
+      "resourceType": "Patient",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Mr. Fred Joe <b>BLOGGS </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>9876543210</td></tr><tr><td>Date of birth</td><td><span>01 June 2019</span></td></tr></tbody></table></div>"
+      },
+      "identifier": [ {
+        "extension": [ {
+          "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+          "valueCodeableConcept": {
+            "coding": [ {
+              "system": "http://snomed.info/sct",
+              "code": "886731000000109",
+              "display": "Patient Demographics"
+            } ]
+          }
+        } ],
+        "system": "https://fhir.nhs.uk/Id/nhs-number",
+        "value": "9876543210"
+      }, {
+        "system": "https://fhir.nhs.uk/Id/nhs-number",
+        "value": "AB1234567D"
+      } ],
+      "name": [ {
+        "use": "official",
+        "family": "Bloggs",
+        "given": [ "Fred", "Joe" ],
+        "prefix": [ "Mr." ]
+      }, {
+        "use": "usual",
+        "family": "Bloggs",
+        "given": [ "Freddy" ],
+        "prefix": [ "Mr." ]
+      } ],
+      "gender": "unknown",
+      "birthDate": "2019-06-01T12:00:00+01:00"
+    }
+  }, {
+    "fullUrl": "urn:uuid:0716cbdb-f8dc-401e-9057-feef92308c66",
+    "resource": {
+      "resourceType": "Organization",
+      "identifier": [ {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "A12345"
+      } ],
+      "name": "Test Ooganisation",
+      "address": [ {
+        "line": [ "Address Line 1" ],
+        "city": "City",
+        "postalCode": "AB12 3CD"
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:6701401c-169b-4056-a35b-c2510f0e3bf7",
+    "resource": {
+      "resourceType": "Practitioner",
+      "identifier": [ {
+        "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+        "value": "56789"
+      } ],
+      "name": [ {
+        "family": "DrSurname",
+        "given": [ "DrFirstname" ],
+        "prefix": [ "Dr." ]
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:5ebc085a-8c63-436b-b84e-6a3eee637a4e",
+    "resource": {
+      "resourceType": "Encounter",
+      "participant": [ {
+        "type": [ {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/v3/ParticipationType",
+            "code": "DIS",
+            "display": "discharger"
+          } ]
+        } ],
+        "individual": {
+          "reference": "urn:uuid:6701401c-169b-4056-a35b-c2510f0e3bf7"
+        }
+      } ],
+      "location": [ {
+        "location": {
+          "reference": "urn:uuid:409078e1-401f-40a6-8e8c-9db3967bb4ac"
+        },
+        "period": {
+          "end": "2019-03-01T00:00:00+00:00"
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:409078e1-401f-40a6-8e8c-9db3967bb4ac",
+    "resource": {
+      "resourceType": "Location"
+    }
+  } ]
+}

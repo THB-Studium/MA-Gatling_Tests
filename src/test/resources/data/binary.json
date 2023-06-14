@@ -1,0 +1,24 @@
+{
+  "resourceType": "Binary",
+  "id": "ddb1e594-4d3b-4cad-97a2-a9e4cc5004e1",
+  "meta": {
+    "formatCommentsPre": [],
+    "formatCommentsPost": [],
+    "id": "086c2d04-5791-4ca4-9d98-35a94d244c4b",
+    "versionId": 1,
+    "lastUpdated": "2022-11-01T11:28:31.885+00:00",
+    "tag": [
+      {
+        "system": "http://hl7.org/fhir/composition-status",
+        "code": "preliminary 1",
+        "display": "default Binary object"
+      }
+    ],
+    "empty": false
+  },
+  "contentType": "application/fhir+ndjson",
+  "data": "eyJyZXNvdXJjZVR5cGUiOiJQcmFjdGl0aW9uZXIiLCJpZCI6ImNsaW5GaGlyYnFzcDF6SjRHNk5tY2thUUtBV0RlTHBLUkY3MyIsIm1ldGEiOnsidmVyc2lvbklkIjoiMSIsImxhc3RVcGRhdGVkIjoiMjAxOS0wOS0xN1QyMDo1NTozMy45NjUrMDA6MDAiLCJzb3VyY2UiOiIjMjA0OGE5ZWU4NTdjYTc2ZCJ9LCJpZGVudGlmaWVyIjpbeyJzeXN0ZW0iOiJodHRwOi8vY2xpbmZoaXIuY29tL2ZoaXIvTmFtaW5nU3lzdGVtL3ByYWN0aXRpb25lciIsInZhbHVlIjoiYnFzcDF6SjRHNk5tY2thUUtBV0RlTHBLUkY3MyJ9XSwidGVsZWNvbSI6W3sic3lzdGVtIjoiZW1haWwiLCJ2YWx1ZSI6ImJtaWxpdXNAbm1kcC5vcmcifV19CnsicmVzb3VyY2VUeXBlIjoiUHJhY3RpdGlvbmVyIiwiaWQiOiJjbGluRmhpckZLOE5DQXY1WWZiTlppQXpIa0l5dEVXR09OdjIiLCJtZXRhIjp7InZlcnNpb25JZCI6IjEiLCJsYXN0VXBkYXRlZCI6IjIwMTktMDktMThUMDE6NDc6NDUuODYzKzAwOjAwIiwic291cmNlIjoiIzdjYzEzMDQ2ZGY3MzBmMzgifSwiaWRlbnRpZmllciI6W3sic3lzdGVtIjoiaHR0cDovL2NsaW5maGlyLmNvbS9maGlyL05hbWluZ1N5c3RlbS9wcmFjdGl0aW9uZXIiLCJ2YWx1ZSI6IkZLOE5DQXY1WWZiTlppQXpIa0l5dEVXR09OdjIifV0sInRlbGVjb20iOlt7InN5c3RlbSI6ImVtYWlsIiwidmFsdWUiOiJnZW9yZ2UuZGl4b25AYWxsc2NyaXB0cy5jb20ifV19",
+  "empty": false,
+  "formatCommentsPre": [],
+  "formatCommentsPost": []
+}

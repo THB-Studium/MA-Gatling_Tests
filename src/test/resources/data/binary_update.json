@@ -1,0 +1,133 @@
+{
+  "formatCommentsPre": [],
+  "formatCommentsPost": [],
+  "id": "ae400f7e-498d-4965-afe5-aa34881cac22",
+  "resourceType": "Binary",
+  "meta": {
+    "formatCommentsPre": [],
+    "formatCommentsPost": [],
+    "id": "1047d3cb-12de-4ee8-bee6-2ad33dfb7802",
+    "extension": [],
+    "disallowExtensions": false,
+    "versionId": 2,
+    "lastUpdated": "2023-04-17T08:41:01",
+    "source": {
+      "formatCommentsPre": [],
+      "formatCommentsPost": [],
+      "id": "8ccca4fc-d7e6-4a9e-ac33-0c1a610a4fe0",
+      "extension": [],
+      "disallowExtensions": false,
+      "myStringValue": null,
+      "empty": true
+    },
+    "profile": [],
+    "security": [],
+    "tag": [
+      {
+        "formatCommentsPre": [],
+        "formatCommentsPost": [],
+        "id": "88478f19-6b4d-43e8-af82-97a81321e040",
+        "extension": [],
+        "disallowExtensions": false,
+        "system": {
+          "formatCommentsPre": [],
+          "formatCommentsPost": [],
+          "id": "7ac90c38-4be8-48d7-baa8-4e0776f29023",
+          "extension": [],
+          "disallowExtensions": false,
+          "myStringValue": "http://hl7.org/fhir/composition-updated-status",
+          "empty": true
+        },
+        "version": null,
+        "code": {
+          "formatCommentsPre": [],
+          "formatCommentsPost": [],
+          "id": "a68169b1-796c-4484-99f3-7d70bbd07e8b",
+          "extension": [],
+          "disallowExtensions": false,
+          "myStringValue": "update 1",
+          "system": null,
+          "empty": true
+        },
+        "display": "updated object",
+        "userSelected": false,
+        "empty": true
+      }
+    ],
+    "empty": true
+  },
+  "implicitRules": {
+    "formatCommentsPre": [],
+    "formatCommentsPost": [],
+    "id": "b50fb739-57cc-433b-b840-c14bfc046459",
+    "extension": [],
+    "disallowExtensions": false,
+    "myStringValue": null,
+    "empty": true
+  },
+  "language": {
+    "formatCommentsPre": [],
+    "formatCommentsPost": [],
+    "id": "4b393ca8-6b1f-4991-8acd-c483528c0e18",
+    "extension": [],
+    "disallowExtensions": false,
+    "myStringValue": null,
+    "system": null,
+    "empty": true
+  },
+  "contentType": "application/fhir+ndjson",
+  "securityContext": {
+    "formatCommentsPre": [],
+    "formatCommentsPost": [],
+    "id": "dba9e12c-a6cd-40bb-8aea-4af26a780cc7",
+    "extension": [],
+    "disallowExtensions": false,
+    "resource": null,
+    "reference": null,
+    "type": {
+      "formatCommentsPre": [],
+      "formatCommentsPost": [],
+      "id": "2aa7ad51-5b4b-4a75-bb47-eef6ec37e42b",
+      "extension": [],
+      "disallowExtensions": false,
+      "myStringValue": null,
+      "empty": true
+    },
+    "identifier": {
+      "formatCommentsPre": [],
+      "formatCommentsPost": [],
+      "id": "6b83af1a-b929-4b55-9f37-1250f5372abf",
+      "extension": [],
+      "disallowExtensions": false,
+      "use": null,
+      "type": {
+        "formatCommentsPre": [],
+        "formatCommentsPost": [],
+        "id": "d68becc9-8cc1-432f-9b99-5238e7f6db79",
+        "extension": [],
+        "disallowExtensions": false,
+        "coding": [],
+        "text": null,
+        "empty": true
+      },
+      "system": {
+        "formatCommentsPre": [],
+        "formatCommentsPost": [],
+        "id": "0c34252d-e33a-4419-81a6-35a778901ed6",
+        "extension": [],
+        "disallowExtensions": false,
+        "myStringValue": null,
+        "empty": true
+      },
+      "value": null,
+      "period": null,
+      "assigner": null,
+      "empty": true
+    },
+    "display": null,
+    "empty": true
+  },
+  "securityContextTarget": null,
+  "data": "eyJyZXNvdXJjZVR5cGUiOiJQcmFjdGl0aW9uZXIiLCJpZCI6ImNsaW5GaGlyYnFzcDF6SjRHNk5tY2thUUtBV0RlTHBLUkY3MyIsIm1ldGEiOnsidmVyc2lvbklkIjoiMSIsImxhc3RVcGRhdGVkIjoiMjAxOS0wOS0xN1QyMDo1NTozMy45NjUrMDA6MDAiLCJzb3VyY2UiOiIjMjA0OGE5ZWU4NTdjYTc2ZCJ9LCJpZGVudGlmaWVyIjpbeyJzeXN0ZW0iOiJodHRwOi8vY2xpbmZoaXIuY29tL2ZoaXIvTmFtaW5nU3lzdGVtL3ByYWN0aXRpb25lciIsInZhbHVlIjoiYnFzcDF6SjRHNk5tY2thUUtBV0RlTHBLUkY3MyJ9XSwidGVsZWNvbSI6W3sic3lzdGVtIjoiZW1haWwiLCJ2YWx1ZSI6ImJtaWxpdXNAbm1kcC5vcmcifV19CnsicmVzb3VyY2VUeXBlIjoiUHJhY3RpdGlvbmVyIiwiaWQiOiJjbGluRmhpckZLOE5DQXY1WWZiTlppQXpIa0l5dEVXR09OdjIiLCJtZXRhIjp7InZlcnNpb25JZCI6IjEiLCJsYXN0VXBkYXRlZCI6IjIwMTktMDktMThUMDE6NDc6NDUuODYzKzAwOjAwIiwic291cmNlIjoiIzdjYzEzMDQ2ZGY3MzBmMzgifSwiaWRlbnRpZmllciI6W3sic3lzdGVtIjoiaHR0cDovL2NsaW5maGlyLmNvbS9maGlyL05hbWluZ1N5c3RlbS9wcmFjdGl0aW9uZXIiLCJ2YWx1ZSI6IkZLOE5DQXY1WWZiTlppQXpIa0l5dEVXR09OdjIifV0sInRlbGVjb20iOlt7InN5c3RlbSI6ImVtYWlsIiwidmFsdWUiOiJnZW9yZ2UuZGl4b25AYWxsc2NyaXB0cy5jb20ifV19",
+  "empty": true
+}
