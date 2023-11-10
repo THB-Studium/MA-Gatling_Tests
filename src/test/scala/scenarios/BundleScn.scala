@@ -57,12 +57,12 @@ object BundleScn {
         .get(Environment.bundlesUrl + "/${" + objectIdKey + "}")
         .check(status.is(200))
         .check(bodyString.saveAs(responseBodyKey))
-//        .check(jsonPath("$.resourceType").is(Environment.resourceType_bundle))
-//        .check(jsonPath("$.meta.versionId").is(Environment.meta_versionId))
-//        .check(jsonPath("$.meta.lastUpdated").notNull)
-//        .check(jsonPath("$.meta.tag[0].system.myStringValue").is(Environment.meta_tag_system))
-//        .check(jsonPath("$.meta.tag[0].code.myStringValue").is(Environment.meta_tag_code))
-//        .check(jsonPath("$.meta.tag[0].display").is(Environment.meta_tag_display))
+        .check(jsonPath("$.resourceType").is(Environment.resourceType_bundle))
+        .check(jsonPath("$.meta.versionId").is(Environment.meta_versionId))
+        .check(jsonPath("$.meta.lastUpdated").notNull)
+        .check(jsonPath("$.meta.tag[0].system.myStringValue").is(Environment.meta_tag_system))
+        .check(jsonPath("$.meta.tag[0].code.myStringValue").is(Environment.meta_tag_code))
+        .check(jsonPath("$.meta.tag[0].display").is(Environment.meta_tag_display))
       )
     }
   }
@@ -75,12 +75,12 @@ object BundleScn {
         .body(ElFileBody("data/bundle_update.json")).asJson
         .check(status.is(200))
         .check(bodyString.saveAs(updatedObjectKey))
-//        .check(jsonPath("$.resourceType").is(Environment.resourceType_bundle))
-//        .check(jsonPath("$.meta.versionId").is(Environment.meta_versionId))
-//        .check(jsonPath("$.meta.lastUpdated").notNull)
-//        .check(jsonPath("$.meta.tag[0].system.myStringValue").is(Environment.meta_tag_system))
-//        .check(jsonPath("$.meta.tag[0].code.myStringValue").is(Environment.meta_tag_code))
-//        .check(jsonPath("$.meta.tag[0].display").is(Environment.meta_tag_display))
+        .check(jsonPath("$.resourceType").is(Environment.resourceType_bundle))
+        .check(jsonPath("$.meta.versionId").is(Environment.meta_versionId))
+        .check(jsonPath("$.meta.lastUpdated").notNull)
+        .check(jsonPath("$.meta.tag[0].system.myStringValue").is(Environment.meta_tag_system))
+        .check(jsonPath("$.meta.tag[0].code.myStringValue").is(Environment.meta_tag_code))
+        .check(jsonPath("$.meta.tag[0].display").is(Environment.meta_tag_display))
       )
     }
   }
@@ -104,24 +104,12 @@ object BundleScn {
     .exec(_listAllBundles())
 
   val getOneBundleScn: ScenarioBuilder = scenario("Test To Get One Bundle")
-    .doIf(session => session(objectIdKey).asOption[Int].isEmpty) {
-      _listAllBundles()
-    }
-    .pause(5)
     .exec(_getOneBundle())
 
   val updateOneBundleScn: ScenarioBuilder = scenario("Test To Update One Bundle")
-    .doIf(session => session(objectIdKey).asOption[Int].isEmpty) {
-      _listAllBundles()
-    }
-    .pause(5)
     .exec(_updateOneBundle())
 
   val deleteOneBundleScn: ScenarioBuilder = scenario("Test To Delete One Bundle")
-    .doIf(session => session(objectIdKey).asOption[Int].isEmpty) {
-      _listAllBundles()
-    }
-    .pause(5)
     .exec(_deleteOneBundle())
 
 }
