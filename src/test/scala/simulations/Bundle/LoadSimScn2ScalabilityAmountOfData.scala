@@ -23,8 +23,8 @@ class LoadSimScn2ScalabilityAmountOfData extends Simulation {
   }
 
   after {
-    val tableName: String = if (!TestHelper.currentDB.equals(DbName.CassandraDB))
-      TableName.BundleMod_Cassandra.toString else TableName.BundleMod.toString
+    val tableName: TableName.Value = if (!TestHelper.currentDB.equals(DbName.CassandraDB))
+      TableName.BundleMod_Cassandra else TableName.BundleMod
 
     val db = new DatabaseConf()
     db.cleanup(tableName)

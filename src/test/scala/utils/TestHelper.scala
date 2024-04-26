@@ -7,7 +7,7 @@ import utils.db.DbName
 
 object TestHelper {
   // ::: Constants Attributes
-  val currentDB: DbName.Value       = DbName.CockroachDB
+  val currentDB: DbName.Value       = DbName.PostgresQL
   val DELETE_SQL_QUERY: String      = "DELETE FROM %s"
   val DELETE_CQL_QUERY: String      = "TRUNCATE %s"
 

@@ -22,8 +22,8 @@ class LoadSimScn2ScalabilityByRampUsers extends Simulation {
   }
 
   after {
-    val tableName: String = if (!TestHelper.currentDB.equals(DbName.CassandraDB))
-      TableName.BundleMod_Cassandra.toString else TableName.BundleMod.toString
+    val tableName: TableName.Value = if (!TestHelper.currentDB.equals(DbName.CassandraDB))
+      TableName.BundleMod_Cassandra else TableName.BundleMod
 
     // to clean the DB after tests:
     val db = new DatabaseConf()

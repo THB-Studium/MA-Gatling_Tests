@@ -21,7 +21,7 @@ class LoadSimScn2CreateBundle extends Simulation {
   after {
     // to clean the DB after tests:
     val db = new DatabaseConf()
-    db.cleanup(TableName.BundleMod.toString)
+    db.cleanup(TableName.BundleMod)
   }
 
 

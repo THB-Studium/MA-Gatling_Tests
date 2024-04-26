@@ -25,7 +25,7 @@ class LoadSimScn2DeleteBinary extends Simulation {
   after {
     // to clean the DB after tests:
     val db = new DatabaseConf()
-    db.cleanup(TableName.BinaryMod.toString)
+    db.cleanup(TableName.BinaryMod)
   }
 
 
